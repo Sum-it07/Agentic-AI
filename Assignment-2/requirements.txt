@@ -1,0 +1,21 @@
+# ─────────────────────────────────────────────────────────────
+#  requirements.txt — Autonomous Research Agent (Gemini edition)
+#
+#  Install:  pip install -r requirements.txt
+# ─────────────────────────────────────────────────────────────
+
+# ── LangChain core (pinned to compatible range) ───────────────
+langchain>=0.2.0,<0.4.0
+langchain-core>=0.2.0,<0.4.0
+langchain-community>=0.2.0,<0.4.0
+
+# ── Google Gemini integration ────────────────────────────────
+langchain-google-genai>=1.0.0
+google-generativeai>=0.7.0
+
+# ── Tool dependencies ────────────────────────────────────────
+duckduckgo-search>=6.1.0   # DuckDuckGo web search (no API key)
+wikipedia>=1.4.0            # Wikipedia knowledge tool
+
+# ── Utilities ────────────────────────────────────────────────
+python-dotenv>=1.0.0        # optional: load .env file
